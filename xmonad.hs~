@@ -6,7 +6,6 @@ import qualified Data.Map as M
 import XMonad.Actions.OnScreen
 import XMonad.Actions.Submap
 import XMonad.Actions.CopyWindow as C
-import XMonad.Actions.CycleWS 
 import XMonad.Hooks.SetWMName
 import System.Exit
 
@@ -58,13 +57,13 @@ screenKeys =
   , ((myModMask .|. mod1Mask, xK_w)        , windows (W.greedyView "3"))
   , ((myModMask .|. mod1Mask, xK_v)        , windows (W.greedyView "5"))
     
-  , ((myModMask .|. mod4Mask, xK_semicolon), windows (W.shift "4"))
-  , ((myModMask .|. mod4Mask, xK_q)        , windows (W.shift "2"))
-  , ((myModMask .|. mod4Mask, xK_j)        , windows (W.shift "0"))
+  , ((myModMask .|. mod2Mask, xK_semicolon), windows (W.shift "4"))
+  , ((myModMask .|. mod2Mask, xK_q)        , windows (W.shift "2"))
+  , ((myModMask .|. mod2Mask, xK_j)        , windows (W.shift "0"))
 
-  , ((myModMask .|. mod4Mask, xK_m)        , windows (W.shift "1"))
-  , ((myModMask .|. mod4Mask, xK_w)        , windows (W.shift "3"))
-  , ((myModMask .|. mod4Mask, xK_v)        , windows (W.shift "5"))
+  , ((myModMask .|. mod2Mask, xK_m)        , windows (W.shift "1"))
+  , ((myModMask .|. mod2Mask, xK_w)        , windows (W.shift "3"))
+  , ((myModMask .|. mod2Mask, xK_v)        , windows (W.shift "5"))
     
   , ((myModMask, xK_k)                     , screenWorkspace 0 >>= flip whenJust (windows . W.view))
   , ((myModMask, xK_b)                     , screenWorkspace 1 >>= flip whenJust (windows . W.view))
