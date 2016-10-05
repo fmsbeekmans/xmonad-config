@@ -26,6 +26,7 @@ myKeys =  stdCommandKeys
 
 stdCommandKeys =
   [ ((myModMask, xK_Escape)                 , io (exitWith ExitSuccess))
+  , ((myModMask .|. shiftMask, xK_q)        , spawn "xmonad --recompile; xmonad --restart")
   , ((myModMask .|. shiftMask, xK_k)        , C.kill1)
   , ((myModMask .|. shiftMask, xK_a)        , spawn "dmenu run")
     
