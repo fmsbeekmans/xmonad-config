@@ -19,6 +19,9 @@ main = xmonad $ defaultConfig
   , modMask = myModMask
   , startupHook = setWMName "LG3D"
   , layoutHook = emptyBSP
+
+  , focusFollowsMouse = False
+  , clickJustFocuses = False
   } `additionalKeys` myKeys
 
 myWorkspaces = ["0", "1", "2", "3", "4", "5", "6", "7"]
