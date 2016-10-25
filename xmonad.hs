@@ -77,6 +77,9 @@ screenKeys =
   , ((myModMask .|. mod4Mask, xK_m)         , moveToWorkspaceAndFocus 1 "1")
   , ((myModMask .|. mod4Mask, xK_w)         , moveToWorkspaceAndFocus 1 "3")
   , ((myModMask .|. mod4Mask, xK_v)         , moveToWorkspaceAndFocus 1 "5")
+
+  , ((myModMask .|. mod4Mask, xK_k)         , moveToWorkspaceAndFocus 0)
+  , ((myModMask .|. mod4Mask, xK_b)         , moveToWorkspaceAndFocus 1)
     
   , ((myModMask, xK_k)                      , focusWorkspace 0)
   , ((myModMask, xK_b)                      , focusWorkspace 1)
@@ -92,6 +95,13 @@ moveToWorkspaceAndFocus s w = do
   windows (W.shift w)
   windows (onlyOnScreen s w)
   focusWorkspace s
+
+moveToScreenAndFocus :: ScreenId -> X ()
+moveToScreenAndFocus s = do
+  workspaceId <- screenWorkspace s
+  case workspaceId of
+    Just w -> moveToWorkspaceAndFocus s w
+    Nothing -> Return ()
   
 spawnCommands =
   [((myModMask, xK_a)                       , submap . M.fromList $
