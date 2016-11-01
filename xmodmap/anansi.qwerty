@@ -1,0 +1,133 @@
+keycode  10 = 1 exclam
+keycode  11 = 2 at
+keycode  12 = 3 numbersign
+keycode  13 = 4 dollar
+keycode  14 = 5 percent
+keycode  15 = 6 asciicircum
+keycode  16 = 7 ampersand
+keycode  17 = 8 asterisk
+keycode  18 = 9 parenleft
+keycode  19 = 0 parenright
+keycode  22 = BackSpace
+keycode  24 = q Q
+keycode  25 = w W
+keycode  26 = e E
+keycode  27 = r R
+keycode  28 = t T
+keycode  29 = y Y
+keycode  30 = u U
+keycode  31 = i I
+keycode  32 = o O
+keycode  33 = p P
+keycode  34 = bracketleft braceleft
+keycode  35 = bracketright braceright
+keycode  38 = a A
+keycode  39 = s S
+keycode  40 = d D
+keycode  41 = f F
+keycode  42 = g G
+keycode  43 = h H
+keycode  44 = j J
+keycode  45 = k K
+keycode  46 = l L
+keycode  47 = semicolon colon
+keycode  48 = apostrophe quotedbl
+keycode  49 = grave asciitilde grave asciitilde dead_grave dead_tilde dead_grave
+keycode  50 = Shift_L
+keycode  51 = bar
+keycode  52 = z Z
+keycode  53 = x X
+keycode  54 = c C
+keycode  55 = v V
+keycode  56 = b B
+keycode  57 = n N
+keycode  58 = m M
+keycode  59 = comma less
+keycode  60 = period greater
+keycode  61 = slash question
+keycode  65 = space
+keycode  77 = Num_Lock NoSymbol Num_Lock
+keycode  78 = Scroll_Lock NoSymbol Scroll_Lock
+keycode  79 = KP_Home KP_7 KP_Home KP_7
+keycode  80 = KP_Up KP_8 KP_Up KP_8
+keycode  81 = KP_Prior KP_9 KP_Prior KP_9
+keycode  82 = KP_Subtract KP_Subtract KP_Subtract KP_Subtract KP_Subtract KP_Subtract XF86Prev_VMode
+keycode  83 = KP_Left KP_4 KP_Left KP_4
+keycode  84 = KP_Begin KP_5 KP_Begin KP_5
+keycode  85 = KP_Right KP_6 KP_Right KP_6
+keycode  86 = KP_Add KP_Add KP_Add KP_Add KP_Add KP_Add XF86Next_VMode
+keycode  87 = KP_End KP_1 KP_End KP_1
+keycode  88 = KP_Down KP_2 KP_Down KP_2
+keycode  89 = KP_Next KP_3 KP_Next KP_3
+keycode  90 = KP_Insert KP_0 KP_Insert KP_0
+keycode  91 = KP_Delete KP_Decimal KP_Delete KP_Decimal
+keycode  95 = F11 F11 F11 F11 F11 F11 XF86Switch_VT_11
+keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
+keycode 104 = KP_Enter NoSymbol KP_Enter
+keycode 105 = Control_R NoSymbol Control_R
+keycode 106 = KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide XF86Ungrab
+keycode 107 = Print Sys_Req Print Sys_Req
+keycode 108 = Alt_R Meta_R Alt_R Meta_R
+keycode 109 = Linefeed NoSymbol Linefeed
+keycode 110 = Home NoSymbol Home
+keycode 111 = Up NoSymbol Up
+keycode 112 = XF86AudioLowerVolume
+keycode 113 = Left NoSymbol Left
+keycode 114 = Right NoSymbol Right
+keycode 115 = End NoSymbol End
+keycode 116 = Down NoSymbol Down
+keycode 117 = XF86AudioRaiseVolume
+keycode 118 = Insert NoSymbol Insert
+keycode 119 = Delete NoSymbol Delete
+keycode 125 = KP_Equal NoSymbol KP_Equal
+keycode 126 = plusminus NoSymbol plusminus
+keycode 127 = Pause Break Pause Break
+keycode 135 = Menu NoSymbol Menu
+keycode 187 = NoSymbol NoSymbol NoSymbol
+keycode 188 = NoSymbol NoSymbol NoSymbol
+keycode 190 = Redo NoSymbol Redo
+keycode 193 = KP_1
+keycode 194 = KP_2
+keycode 195 = KP_3
+keycode 196 = KP_4
+keycode 197 = KP_5
+keycode 203 = Mode_switch NoSymbol Mode_switch
+keycode 204 = NoSymbol Alt_L NoSymbol Alt_L
+keycode 205 = NoSymbol Meta_L NoSymbol Meta_L
+keycode 206 = NoSymbol Super_L NoSymbol Super_L
+keycode 207 = NoSymbol Hyper_L NoSymbol Hyper_L
+keycode 218 = Print NoSymbol Print
+keycode 231 = Cancel NoSymbol Cancel
+
+clear Control
+clear Shift
+clear lock
+clear Mod1
+clear Mod2
+clear Mod3
+clear Mod4
+clear Mod5
+
+keycode  99 = Control_L
+add Control = Control_L
+
+keycode 198 = Alt_L
+add mod1    = Alt_L
+
+keycode 199 = Super_L
+add mod4    = Super_L
+
+keycode 200 = Shift_L
+add Shift   = Shift_L
+
+keycode 201 = Mode_switch
+add mod4    = Mode_switch
+
+
+keycode 103 = Return
+keycode  98 = Hyper_R
+add Mod5    = Hyper_R
+
+keycode  64 = parenleft braceleft bracketleft 
+keycode 108 = parenright braceright bracketright
+

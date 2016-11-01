@@ -52,6 +52,9 @@ stdCommandKeys =
 
   , ((myModMask .|. mod1Mask, xK_r)         , sendMessage Rotate)
   , ((myModMask .|. mod1Mask, xK_c)         , sendMessage FocusParent)
+
+  , ((myModMask, xK_F1)                     , spawn "xmodmap ~/.xmodmap/xmodmap/anansi.dvorak")
+  , ((myModMask, xK_F2)                     , spawn "xmodmap ~/.xmodmap/xmodmap/anansi.qwerty")
   ]
 
 screenKeys = 
