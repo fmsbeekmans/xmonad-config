@@ -36,7 +36,7 @@ stdCommandKeys =
   , ((myModMask .|. shiftMask, xK_k)        , C.kill1)
   , ((myModMask .|. shiftMask, xK_a)        , spawn "dmenu run")
   , ((0, xK_KP_1)                           , spawn "slock")
-    
+  , ((0, xK_KP_2)                           , spawn "date +\"%y-%m-%d %H:%M:%S\" | dzen2 -p 2 -xs 2 -fn 'Source Code Pro'")
   , ((myModMask, xK_h)                      , windows W.focusMaster)
   , ((myModMask, xK_t)                      , windows W.focusUp)
   , ((myModMask, xK_n)                      , windows W.focusDown)
