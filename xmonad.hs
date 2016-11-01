@@ -14,7 +14,7 @@ import System.Exit
 
 myModMask = mod5Mask
 
-main = xmonad $ defaultConfig
+main = xmonad $ def
   { workspaces = myWorkspaces
   , modMask = myModMask
   , startupHook = setWMName "LG3D"
@@ -109,7 +109,7 @@ spawnCommands =
       , ((0, xK_e)                          , spawn "emacsclient -c")
       , ((0, xK_u)                          , spawn "subl")
       , ((0, xK_g)                          , spawn "chromium")
-      , ((shiftMask, xK_g)                  , spawn "conkeror")	
+      , ((shiftMask, xK_g)                  , spawn "conkeror")
       , ((0, xK_c)                          , spawn "urxvt")
       , ((0, xK_r)                          , spawn "deluge")
       , ((0, xK_m)                          , spawn "smplayer")
