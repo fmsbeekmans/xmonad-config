@@ -35,6 +35,7 @@ stdCommandKeys =
   , ((myModMask .|. shiftMask, xK_q)        , spawn "xmonad --recompile; xmonad --restart")
   , ((myModMask .|. shiftMask, xK_k)        , C.kill1)
   , ((myModMask .|. shiftMask, xK_a)        , spawn "dmenu run")
+  , ((0, xK_KP_1)                           , spawn "slock")
     
   , ((myModMask, xK_h)                      , windows W.focusMaster)
   , ((myModMask, xK_t)                      , windows W.focusUp)
